@@ -1,18 +1,26 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <TodoList />
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import TodoList from '@/components/TodoList.vue';
+import HelloWorld from '@/components/HelloWorld.vue';
 
 export default {
   name: 'HomeView',
   components: {
-    HelloWorld
+    HelloWorld,
+    TodoList
   }
-}
+};
 </script>
+
+<style scoped>
+/* Globala stilar (om nödvändigt) */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+</style>
